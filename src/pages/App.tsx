@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Dashboard } from './components/Dashboard'; // '..' sai de 'pages' e entra em 'components'
-import { Participants } from './Participants'; // './' olha na mesma pasta onde o App está
-import '../index.css'; // '..' sai de 'pages' para achar o CSS na raiz da 'src'
+import { Dashboard } from '../components/Dashboard'; // Adjusted path: '../components' instead of './components'
+import { Participants } from './Participants';
+import '../index.css'; // Adjusted path: '../index.css' is correct for src/pages/App.tsx
+
 function App() {
   const [view, setView] = useState<'dashboard' | 'participants'>('dashboard');
   const [candidateName, setCandidateName] = useState('');
